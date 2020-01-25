@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Game</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="jumbotron">
+
+    <h1 class="text-center">Test your knowledge</h1>
+
+ <!-- Here we have a div called mainTextArea where our questions will go -->
+    <div id=question class="text-center">
+        <h3>Click the button below to start the quiz.</h3>
+        <p>You have 3-minutes to complete the quiz by answering 10-questions.  
+            If you miss a question 30-sec will be deducted from the remaining time.  
+            The quiz is over once all 10-questions are answered, or you run out of time.
+        </p>
+    </div>
+
+    <div id=possibleAnswers class="text-center"></div>
+    <div id=rightWrong class="text-center"></div>
+
+    <div class="text-center">
+      <!-- Here we have our button to start the game with id start -->
+      <button id="start" class="btn btn-primary btn-lg"><h3>Start!</h3></button>
+    </div>
+
+  </div>
+
+  <!-- Here we have div called "random-number" where our random number will go -->
+  <h1 class="text-center" id="random-number"></h1>
+
+<script src="script.js"></script>
+</body>
+</html>
